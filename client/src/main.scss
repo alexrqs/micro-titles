@@ -1,0 +1,13 @@
+.body, div {
+  background-color: aqua;
+  font-size: 10px;
+
+  & .real {
+    font-weight: bold;
+  }
+
+  &::after {
+    content: '';
+    font-weight: normal;
+  }
+}

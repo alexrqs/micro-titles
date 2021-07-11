@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: posts
+spec:
+  containers:
+  - name: posts
+    image: micro-titles/posts
+    # when using local images
+    imagePullPolicy: Never
+
+  restartPolicy: Never
